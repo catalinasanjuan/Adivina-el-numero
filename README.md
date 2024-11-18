@@ -29,14 +29,3 @@ Para ejecutar esta aplicación, necesitas:
 1. Clona este repositorio o descarga los archivos.
 2. Abre el archivo `index.html` en un navegador.
 3. Sigue las instrucciones en pantalla para jugar.
-
-## Personalización
-
-Si deseas modificar el rango del número generado, puedes editar los parámetros dentro del archivo JavaScript correspondiente en la carpeta `scripts/`.
-
----
-
-## Nueva Descripción para el Portafolio
-
-**Adivina el Número** es un juego web dinámico y educativo, desarrollado para mejorar la lógica y la diversión de los usuarios al intentar adivinar números generados aleatoriamente. Este proyecto utiliza tecnologías web modernas como necesito que hagas exactamente lo mismo para: para ofrecer una experiencia interactiva y accesible desde cualquier dispositivo. Ideal para aprender programación o disfrutar de un desafío mental ligero.
-
