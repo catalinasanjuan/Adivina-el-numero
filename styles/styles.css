@@ -1,13 +1,28 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-    background-image: url('./assets/background.jpg'); /* Cambio aquí */
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center;
+    background-image: url("../assets/background_1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
 
 
 button {
@@ -22,7 +37,9 @@ button {
 }
 
 button:hover {
-    background-color: #FF7043;
+    background-color: #ff4500; 
+    transform: scale(1.05); 
+    transition: all 0.2s ease-in-out;
 }
 
 input[type="number"] {
@@ -32,6 +49,30 @@ input[type="number"] {
     font-size: 16px;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 4px; /* Bordes redondeados */
+    border-radius: 4px; 
 }
+
+#feedback {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 18px; /* Aumentar tamaño */
+    font-weight: bold;
+    color: #000000; /* Rojo más intenso */
+    background: rgba(255, 255, 255, 0.9); /* Fondo más sólido */
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    min-width: 250px; /* Asegura que no sea muy pequeño */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+
+#feedback {
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
 
