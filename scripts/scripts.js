@@ -2,14 +2,16 @@ let secretNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
 
 function checkGuess() {
-    const userGuess = document.getElementById('userGuess').value;
+    const userGuess = parseInt(document.getElementById('userGuess').value); // Convertir a número
+    const feedback = document.getElementById('feedback');
     attempts++;
+
     if (userGuess < secretNumber) {
-        document.getElementById('feedback').textContent = 'No, mi número es mayor.';
+        feedback.innerHTML = `No, mi número es <span class="mayor">mayor</span>.`;
     } else if (userGuess > secretNumber) {
-        document.getElementById('feedback').textContent = 'No, mi número es menor.';
+        feedback.innerHTML = `No, mi número es <span class="menor">menor</span>.`;
     } else {
-        document.getElementById('feedback').textContent = `¡Acertaste! Y solo utilizaste ${attempts} intentos.`;
+        feedback.innerHTML = `🎉 ¡Acertaste! Y solo utilizaste <strong>${attempts}</strong> intentos.`;
         document.getElementById('userGuess').disabled = true;
     }
 }
