@@ -82,3 +82,10 @@ input[type="number"] {
     font-weight: bold;
 }
 
+.error {
+    color: #d9534f; /* Rojo llamativo */
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
